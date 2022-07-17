@@ -21,3 +21,16 @@
       (empty? (first board-pos)) nil
       (turtle-exist? (first board-pos)) [counter (find-turtle-Y-coord (first board-pos))]
       :else (recur (inc counter) (rest board-pos)))))
+
+
+
+
+(defn update-turtle-position! [current-instance turtle-atom]
+  "Updates the curr position in map and conjs previous curr pos to end of vector"
+  (let [previous-instance (get (:current-position @turtle-atom) 0)]
+    (if (empty? previous-instance)
+      (swap! turtle-atom update :current-position conj current-instance)
+      (do
+        (swap! turtle-atom update
+               :current-position (fn [_] current-instance))
+        (swap! turtle-atom update :previous-position conj previous-instance)))))

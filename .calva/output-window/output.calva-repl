@@ -6,6 +6,9 @@
 
 ; Jacking in...
 ; Starting Jack-in Terminal: lein update-in :dependencies conj '[nrepl,"0.9.0"]' -- update-in :plugins conj '[cider/cider-nrepl,"0.28.5"]' -- update-in '[:repl-options,:nrepl-middleware]' conj '["cider.nrepl/cider-middleware"]' -- with-profile +uberjar repl :headless
+; Interrupting Jack-in process.
+; Jacking in...
+; Starting Jack-in Terminal: lein update-in :dependencies conj '[nrepl,"0.9.0"]' -- update-in :plugins conj '[cider/cider-nrepl,"0.28.5"]' -- update-in '[:repl-options,:nrepl-middleware]' conj '["cider.nrepl/cider-middleware"]' -- with-profile +uberjar repl :headless
 ; Hooking up nREPL sessions...
 ; Connected session: clj
 ; TIPS:
@@ -18,545 +21,226 @@
 clj꞉evolutionary-prog.core꞉>  ; Use `alt+enter` to evaluate
 ; Jack-in done.
 clj꞉evolutionary-prog.core꞉> 
-(+ 1 1)
-2
-clj꞉evolutionary-prog.core꞉> 
 #'evolutionary-prog.core/board
 clj꞉evolutionary-prog.core꞉> 
-[[1 1 1 1 1] [1 1 1 1 1] [1 1 0 1 1] [1 1 1 1 1] [1 1 1 1 1]]
-nil
+; Syntax error compiling at (src/evolutionary_prog/core.clj:45:27).
+; Unable to resolve symbol: turtle-coord in this context
 clj꞉evolutionary-prog.core꞉> 
-[[1 1 1 1 1] [1 1 1 1 1] [1 1 0 1 1] [1 1 1 1 1] [1 1 1 1 1]]
-nil
-clj꞉evolutionary-prog.core꞉> 
-#'evolutionary-prog.core/get-coordinates
-clj꞉evolutionary-prog.core꞉> 
-nil
-clj꞉evolutionary-prog.core꞉> 
-#'evolutionary-prog.core/get-coordinates
-clj꞉evolutionary-prog.core꞉> 
-[2 3]
-clj꞉evolutionary-prog.core꞉> 
-#'evolutionary-prog.core/get-coordinates
-clj꞉evolutionary-prog.core꞉> 
-[[1 1 0 1 1] nil]
-clj꞉evolutionary-prog.core꞉> 
-[[1 1 0 1 1] nil]
-clj꞉evolutionary-prog.core꞉> 
-[[1 1 0 1 1] nil]
-clj꞉evolutionary-prog.core꞉> 
-#'evolutionary-prog.core/get-coordinates
-clj꞉evolutionary-prog.core꞉> 
-[[1 1 0 1 1] 1]
-clj꞉evolutionary-prog.core꞉> 
-[[1 1 0 1 1] 0]
-clj꞉evolutionary-prog.core꞉> 
-#'evolutionary-prog.core/get-turtle-position
-clj꞉evolutionary-prog.core꞉> 
-0
-clj꞉evolutionary-prog.core꞉> 
-nil
-clj꞉evolutionary-prog.core꞉> 
-#'evolutionary-prog.core/board
-clj꞉evolutionary-prog.core꞉> 
-"X"
-clj꞉evolutionary-prog.core꞉> 
-#'evolutionary-prog.core/find-turtle
-clj꞉evolutionary-prog.core꞉> 
-#function[clojure.core/map/fn--5862]
-nil
-clj꞉evolutionary-prog.core꞉> 
-#function[clojure.core/map/fn--5862]
-clj꞉evolutionary-prog.core꞉> 
-#'evolutionary-prog.core/find-turtle
-clj꞉evolutionary-prog.core꞉> 
-[1 1 1 1 1]
-[1 1 1 1 1]
-[1 1 X 1 1]
-[1 1 1 1 1]
-[1 1 1 1 1]
-(nil nil nil nil nil)
-clj꞉evolutionary-prog.core꞉> 
-#'evolutionary-prog.core/find-turtle
-clj꞉evolutionary-prog.core꞉> 
-((nil nil nil nil nil) (nil nil nil nil nil) (nil nil "X" nil nil) (nil nil nil nil nil) (nil nil nil nil nil))
-clj꞉evolutionary-prog.core꞉> 
-#'evolutionary-prog.core/find-turtle-Y-coord
-clj꞉evolutionary-prog.core꞉> 
-#function[clojure.core/map/fn--5862]
-clj꞉evolutionary-prog.core꞉> 
-#'evolutionary-prog.core/find-turtle-Y-coord
-clj꞉evolutionary-prog.core꞉> 
-#function[clojure.core/map/fn--5862]
-clj꞉evolutionary-prog.core꞉> 
-; Syntax error (UnsupportedOperationException) compiling recur at (src/evolutionary_prog/core.clj:37:14).
-; Can only recur from tail position
-clj꞉evolutionary-prog.core꞉> 
-#'evolutionary-prog.core/find-turtle-Y-coord
-clj꞉evolutionary-prog.core꞉> 
-(nil)
-clj꞉evolutionary-prog.core꞉> 
-[1 1 "X" 1 1]
-clj꞉evolutionary-prog.core꞉> 
-#'evolutionary-prog.core/find-turtle-Y-coord
-clj꞉evolutionary-prog.core꞉> 
-[1 1 X 1 1]
-(nil)
-clj꞉evolutionary-prog.core꞉> 
-([1 1 X 1 1]
-nil)
-nil
-clj꞉evolutionary-prog.core꞉> 
-#'evolutionary-prog.core/find-turtle-Y-coord
-clj꞉evolutionary-prog.core꞉> 
-; Error printing return value (ArityException) at clojure.lang.AFn/throwArity (AFn.java:429).
-; Wrong number of args (0) passed to: clojure.lang.PersistentVector
-clj꞉evolutionary-prog.core꞉> 
-#'evolutionary-prog.core/find-turtle-Y-coord
-clj꞉evolutionary-prog.core꞉> 
-(false)
-clj꞉evolutionary-prog.core꞉> 
-[1 1 "X" 1 1]
-clj꞉evolutionary-prog.core꞉> 
-#'evolutionary-prog.core/find-turtle-Y-coord
-clj꞉evolutionary-prog.core꞉> 
-(false)
-clj꞉evolutionary-prog.core꞉> 
-[1 1 "X" 1 1]
-clj꞉evolutionary-prog.core꞉> 
-#'evolutionary-prog.core/find-turtle-Y-coord
-clj꞉evolutionary-prog.core꞉> 
-(false)
-clj꞉evolutionary-prog.core꞉> 
-(false)
-nil
-clj꞉evolutionary-prog.core꞉> 
-#'evolutionary-prog.core/find-turtle-Y-coord
-clj꞉evolutionary-prog.core꞉> 
-(false true)
-clj꞉evolutionary-prog.core꞉> 
-#'evolutionary-prog.core/find-turtle-Y-coord
-clj꞉evolutionary-prog.core꞉> 
-(false false true false false)
-clj꞉evolutionary-prog.core꞉> 
-#'evolutionary-prog.core/find-turtle-Y-coord
-clj꞉evolutionary-prog.core꞉> 
-; nREPL Connection was closed
-; Connecting ...
-; Jacking in...
-; Starting Jack-in Terminal: lein update-in :dependencies conj '[nrepl,"0.9.0"]' -- update-in :plugins conj '[cider/cider-nrepl,"0.28.5"]' -- update-in '[:repl-options,:nrepl-middleware]' conj '["cider.nrepl/cider-middleware"]' -- with-profile +uberjar repl :headless
-; Hooking up nREPL sessions...
-; Connected session: clj
-; TIPS:
-;   - You can edit the contents here. Use it as a REPL if you like.
-;   - `alt+enter` evaluates the current top level form.
-;   - `ctrl+enter` evaluates the current form.
-;   - `alt+up` and `alt+down` traverse up and down the REPL command history
-;      when the cursor is after the last contents at the prompt
-;   - Clojure lines in stack traces are peekable and clickable.
-clj꞉evolutionary-prog.core꞉> 
-; Jack-in done.
-clj꞉evolutionary-prog.core꞉> 
-#'evolutionary-prog.core/board
-clj꞉evolutionary-prog.core꞉> 
-#'evolutionary-prog.core/find-turtle-Y-coord
-clj꞉evolutionary-prog.core꞉> 
-nil
-clj꞉evolutionary-prog.core꞉> 
-[1 1 "X" 1 1]
-clj꞉evolutionary-prog.core꞉> 
-1
-clj꞉evolutionary-prog.core꞉> 
-(1 "X" 1 1)
-clj꞉evolutionary-prog.core꞉> 
-1
-clj꞉evolutionary-prog.core꞉> 
-; Execution error (IllegalArgumentException) at evolutionary-prog.core/eval7749 (form-init16798879181869047381.clj:48).
-; Don't know how to create ISeq from: java.lang.Long
-clj꞉evolutionary-prog.core꞉> 
-1
-clj꞉evolutionary-prog.core꞉> 
-("X" 1 1)
-clj꞉evolutionary-prog.core꞉> 
-true
-clj꞉evolutionary-prog.core꞉> 
-#'evolutionary-prog.core/find-turtle-Y-coord
-clj꞉evolutionary-prog.core꞉> 
-2
-clj꞉evolutionary-prog.core꞉> 
-#'evolutionary-prog.core/board
-clj꞉evolutionary-prog.core꞉> 
-[[1 1 1 1 1] [1 1 1 1 1] [1 1 "X" 1 1] [1 1 1 1 1] [1 1 1 1 1]]
-clj꞉evolutionary-prog.core꞉> 
-(+ 1 1)
-; nREPL Connection was closed
-; Jacking in...
-; Starting Jack-in Terminal: lein update-in :dependencies conj '[nrepl,"0.9.0"]' -- update-in :plugins conj '[cider/cider-nrepl,"0.28.5"]' -- update-in '[:repl-options,:nrepl-middleware]' conj '["cider.nrepl/cider-middleware"]' -- with-profile +uberjar repl :headless
-; Hooking up nREPL sessions...
-; Connected session: clj
-; TIPS:
-;   - You can edit the contents here. Use it as a REPL if you like.
-;   - `alt+enter` evaluates the current top level form.
-;   - `ctrl+enter` evaluates the current form.
-;   - `alt+up` and `alt+down` traverse up and down the REPL command history
-;      when the cursor is after the last contents at the prompt
-;   - Clojure lines in stack traces are peekable and clickable.
-clj꞉evolutionary-prog.core꞉> 
-; Jack-in done.
-clj꞉evolutionary-prog.core꞉> 
-#'evolutionary-prog.core/find-turtle-Y-coord
-clj꞉evolutionary-prog.core꞉> 
-2
-clj꞉evolutionary-prog.core꞉> 
-0
-clj꞉evolutionary-prog.core꞉> 
-#'evolutionary-prog.core/turtle-exist?
-clj꞉evolutionary-prog.core꞉> 
-[1 1 1 1 1]
-clj꞉evolutionary-prog.core꞉> 
-#'evolutionary-prog.core/turtle-exist?
-clj꞉evolutionary-prog.core꞉> 
-()
-clj꞉evolutionary-prog.core꞉> 
-#'evolutionary-prog.core/turtle-exist?
-clj꞉evolutionary-prog.core꞉> 
-true
-clj꞉evolutionary-prog.core꞉> 
-true
-clj꞉evolutionary-prog.core꞉> 
-false
-clj꞉evolutionary-prog.core꞉> 
-#'evolutionary-prog.core/find-turtle-X-coord
-clj꞉evolutionary-prog.core꞉> 
-; Error printing return value (IllegalArgumentException) at clojure.lang.RT/seqFrom (RT.java:557).
-; Don't know how to create ISeq from: java.lang.Long
-clj꞉evolutionary-prog.core꞉> 
-#'evolutionary-prog.core/turtle-exist?
-clj꞉evolutionary-prog.core꞉> 
-true
-clj꞉evolutionary-prog.core꞉> 
-false
-clj꞉evolutionary-prog.core꞉> 
-#'evolutionary-prog.core/find-turtle-X-coord
-clj꞉evolutionary-prog.core꞉> 
-; Error printing return value (IllegalArgumentException) at clojure.lang.RT/seqFrom (RT.java:557).
-; Don't know how to create ISeq from: java.lang.Long
-clj꞉evolutionary-prog.core꞉> 
-#'evolutionary-prog.core/find-turtle-X-coord
-clj꞉evolutionary-prog.core꞉> 
-; Error printing return value (IllegalArgumentException) at clojure.lang.RT/seqFrom (RT.java:557).
-; Don't know how to create ISeq from: java.lang.Long
-clj꞉evolutionary-prog.core꞉> 
-; Execution error (IllegalArgumentException) at evolutionary-prog.core/turtle-exist? (form-init9035937621053454300.clj:31).
-; Don't know how to create ISeq from: java.lang.Long
-clj꞉evolutionary-prog.core꞉> 
-#'evolutionary-prog.core/find-turtle-X-coord
-clj꞉evolutionary-prog.core꞉> 
-; Execution error (ArityException) at evolutionary-prog.core/find-turtle-X-coord (form-init9035937621053454300.clj:41).
-; Wrong number of args (0) passed to: clojure.lang.PersistentVector
-clj꞉evolutionary-prog.core꞉> 
-false
-clj꞉evolutionary-prog.core꞉> 
-true
-clj꞉evolutionary-prog.core꞉> 
-; Execution error (ArityException) at evolutionary-prog.core/find-turtle-X-coord (form-init9035937621053454300.clj:41).
-; Wrong number of args (0) passed to: clojure.lang.PersistentVector
-clj꞉evolutionary-prog.core꞉> 
-#'evolutionary-prog.core/find-turtle-X-coord
-clj꞉evolutionary-prog.core꞉> 
-; Execution error (ArityException) at evolutionary-prog.core/find-turtle-X-coord (form-init9035937621053454300.clj:41).
-; Wrong number of args (0) passed to: clojure.lang.PersistentVector
-clj꞉evolutionary-prog.core꞉> 
-#'evolutionary-prog.core/find-turtle-X-coord
-clj꞉evolutionary-prog.core꞉> 
-2
-clj꞉evolutionary-prog.core꞉> 
-(nil nil 2 nil nil)
-clj꞉evolutionary-prog.core꞉> 
-(0 0 2 0 0)
-clj꞉evolutionary-prog.core꞉> 
-#'evolutionary-prog.core/board
-clj꞉evolutionary-prog.core꞉> 
-(nil nil nil 2 nil)
-clj꞉evolutionary-prog.core꞉> 
-(0 0 0 2 0)
-clj꞉evolutionary-prog.core꞉> 
-#'evolutionary-prog.core/board
-clj꞉evolutionary-prog.core꞉> 
-(1 nil nil nil nil)
-clj꞉evolutionary-prog.core꞉> 
-(1 0 0 0 0)
-clj꞉evolutionary-prog.core꞉> 
-#'evolutionary-prog.core/board
-clj꞉evolutionary-prog.core꞉> 
-(0 nil nil nil nil)
-clj꞉evolutionary-prog.core꞉> 
-(0 0 0 0 0)
-clj꞉evolutionary-prog.core꞉> 
-#'evolutionary-prog.core/find-turtle-X-coord
-clj꞉evolutionary-prog.core꞉> 
-(0 nil nil nil nil)
-clj꞉evolutionary-prog.core꞉> 
-(nil nil nil nil)
-clj꞉evolutionary-prog.core꞉> 
-(0)
-clj꞉evolutionary-prog.core꞉> 
-#'evolutionary-prog.core/find-turtle-X-coord
-clj꞉evolutionary-prog.core꞉> 
-nil
-clj꞉evolutionary-prog.core꞉> 
-nil
-clj꞉evolutionary-prog.core꞉> 
-0
-clj꞉evolutionary-prog.core꞉> 
-#'evolutionary-prog.core/board
-clj꞉evolutionary-prog.core꞉> 
-nil
-clj꞉evolutionary-prog.core꞉> 
-0
-clj꞉evolutionary-prog.core꞉> 
-(nil nil 0 nil nil)
-clj꞉evolutionary-prog.core꞉> 
-nil
-clj꞉evolutionary-prog.core꞉> 
-(nil nil 0 nil nil)
-clj꞉evolutionary-prog.core꞉> 
-#'evolutionary-prog.core/find-turtle-X-coord
-clj꞉evolutionary-prog.core꞉> 
-0
-clj꞉evolutionary-prog.core꞉> 
-nil
-clj꞉evolutionary-prog.core꞉> 
-(nil nil 0 nil nil)
-clj꞉evolutionary-prog.core꞉> 
-#'evolutionary-prog.core/find-turtle-X-coord
-clj꞉evolutionary-prog.core꞉> 
-(nil nil 0 nil nil)
-clj꞉evolutionary-prog.core꞉> 
-(turtle-exist? (get board 1))
-false
-clj꞉evolutionary-prog.core꞉> 
-(turtle-exist? (get board 2))
-true
-clj꞉evolutionary-prog.core꞉> 
-#'evolutionary-prog.core/find-turtle-X-coord
-clj꞉evolutionary-prog.core꞉> 
-"somehin"
-clj꞉evolutionary-prog.core꞉> 
-#'evolutionary-prog.core/find-turtle-X-coord
-clj꞉evolutionary-prog.core꞉> 
-0
-clj꞉evolutionary-prog.core꞉> 
-
-(find-turtle-X-coord (get board 2))
-0
-clj꞉evolutionary-prog.core꞉> 
-clear
-; Syntax error compiling at (.calva/output-window/output.calva-repl:1:8003).
-; Unable to resolve symbol: clear in this context
-clj꞉evolutionary-prog.core꞉> 
-(clear)
-; Syntax error compiling at (.calva/output-window/output.calva-repl:358:1).
-; Unable to resolve symbol: clear in this context
-clj꞉evolutionary-prog.core꞉> 
-(nil nil 0 nil nil)
-clj꞉evolutionary-prog.core꞉> 
-#'evolutionary-prog.core/find-turtle-X-coord
-clj꞉evolutionary-prog.core꞉> 
-2
-clj꞉evolutionary-prog.core꞉> 
-#'evolutionary-prog.core/find-turtle-XY-coord
-clj꞉evolutionary-prog.core꞉> 
-[2 0]
-clj꞉evolutionary-prog.core꞉> 
-#'evolutionary-prog.core/board
-clj꞉evolutionary-prog.core꞉> 
-#'evolutionary-prog.core/find-turtle-XY-coord
-clj꞉evolutionary-prog.core꞉> 
-[2 2]
-clj꞉evolutionary-prog.core꞉> 
-#'evolutionary-prog.core/board
-clj꞉evolutionary-prog.core꞉> 
-#'evolutionary-prog.core/find-turtle-XY-coord
-clj꞉evolutionary-prog.core꞉> 
-[4 1]
-clj꞉evolutionary-prog.core꞉> 
-; Syntax error compiling at (src/evolutionary_prog/core.clj:41:1).
+; Syntax error compiling at (src/evolutionary_prog/core.clj:45:27).
 ; Unable to resolve symbol: turtle-coord in this context
 clj꞉evolutionary-prog.core꞉> 
 #'evolutionary-prog.core/turtle-coord
 clj꞉evolutionary-prog.core꞉> 
-{:current-position [4 1]}
+#'evolutionary-prog.core/update-turtle-position
+clj꞉evolutionary-prog.core꞉> 
+(update-turtle-position [2 2])
+{:current-position [[]], :previous-position []}
+clj꞉evolutionary-prog.core꞉> 
+#'evolutionary-prog.core/update-turtle-position
 clj꞉evolutionary-prog.core꞉> 
 #'evolutionary-prog.core/board
-clj꞉evolutionary-prog.core꞉> 
-board
-[[1 1 1 1 1] [1 1 1 1 1] [1 1 1 1 1] [1 1 1 1 1] [1 "X" 1 1 1]]
-clj꞉evolutionary-prog.core꞉> 
-#'evolutionary-prog.core/board
-clj꞉evolutionary-prog.core꞉> 
-{:current-position [2 4]}
-clj꞉evolutionary-prog.core꞉> 
-; Syntax error compiling at (src/evolutionary_prog/core.clj:18:1).
-; Unable to resolve symbol: find-turtle-XY-coord in this context
-clj꞉evolutionary-prog.core꞉> 
-; Execution error (IllegalAccessError) at evolutionary-prog.core/eval7968$loading (form-init9035937621053454300.clj:1).
-; find-turtle-XY-coord does not exist
-clj꞉evolutionary-prog.core꞉> 
-nil
-clj꞉evolutionary-prog.coords꞉> 
-#'evolutionary-prog.coords/find-turtle-Y-coord
-clj꞉evolutionary-prog.coords꞉> 
-#'evolutionary-prog.coords/find-turtle-Y-coord
-clj꞉evolutionary-prog.coords꞉> 
-; Syntax error compiling at (src/evolutionary_prog/coords.clj:22:7).
-; Unable to resolve symbol: turtle-exist? in this context
-clj꞉evolutionary-prog.coords꞉> 
-#'evolutionary-prog.coords/turtle-exist?
-clj꞉evolutionary-prog.coords꞉> 
-#'evolutionary-prog.coords/find-turtle-XY-coord
-clj꞉evolutionary-prog.coords꞉> 
-; Execution error (FileNotFoundException) at evolutionary-prog.core/eval7996$loading (form-init9035937621053454300.clj:1).
-; Could not locate coords__init.class, coords.clj or coords.cljc on classpath.
-clj꞉evolutionary-prog.core꞉> 
-nil
-clj꞉evolutionary-prog.core꞉> 
-#'evolutionary-prog.core/board
-clj꞉evolutionary-prog.core꞉> 
-[2 4]
-clj꞉evolutionary-prog.core꞉> 
-{:current-position [2 4]}
-clj꞉evolutionary-prog.core꞉> 
-#'evolutionary-prog.core/new-turtle-coord
-clj꞉evolutionary-prog.core꞉> 
-{:current-position [2 4]}
-clj꞉evolutionary-prog.core꞉> 
-#'evolutionary-prog.core/board
-clj꞉evolutionary-prog.core꞉> 
-{:current-position [2 2]}
-clj꞉evolutionary-prog.core꞉> 
-{:current-position [2 4]}
-clj꞉evolutionary-prog.core꞉> 
-#'evolutionary-prog.core/instance1
-clj꞉evolutionary-prog.core꞉> 
-{:current-position [2 2]}
-clj꞉evolutionary-prog.core꞉> 
-#'evolutionary-prog.core/board
-clj꞉evolutionary-prog.core꞉> 
-#'evolutionary-prog.core/instance2
-clj꞉evolutionary-prog.core꞉> 
-{:current-position [2 2]}
-clj꞉evolutionary-prog.core꞉> 
-{:current-position [4 3]}
 clj꞉evolutionary-prog.core꞉> 
 #'evolutionary-prog.core/turtle-coord
 clj꞉evolutionary-prog.core꞉> 
-{:current-position [2 2], :previous-position []}
+(update-turtle-position [2 2])
+{:current-position [[2 2]], :previous-position []}
 clj꞉evolutionary-prog.core꞉> 
-#'evolutionary-prog.core/update-turtle-position
+(update-turtle-position)
+#'evolutionary-prog.core/update-turtle-position!
 clj꞉evolutionary-prog.core꞉> 
-{:current-position {:current-position [4 3]}, :previous-position [], :previous-positions [[2 2]]}
+(update-turtle-position! [4 2])
+{:current-position nil, :previous-position [[[2 2]]]}
 clj꞉evolutionary-prog.core꞉> 
-#'evolutionary-prog.core/update-turtle-position
+#'evolutionary-prog.core/update-turtle-position!
 clj꞉evolutionary-prog.core꞉> 
-{:current-position {:current-position [4 3]}, :previous-position []}
+(update-turtle-position! [4 4])
+{:current-position ([4 4]), :previous-position [[[2 2]]]}
 clj꞉evolutionary-prog.core꞉> 
-#'evolutionary-prog.core/update-turtle-position
-clj꞉evolutionary-prog.core꞉> 
-{:current-position nil, :previous-position []}
-clj꞉evolutionary-prog.core꞉> 
-#'evolutionary-prog.core/update-turtle-position
-clj꞉evolutionary-prog.core꞉> 
-{:current-position nil, :previous-position []}
-clj꞉evolutionary-prog.core꞉> 
-#'evolutionary-prog.core/update-turtle-position
-clj꞉evolutionary-prog.core꞉> 
-; Execution error (ArityException) at evolutionary-prog.core/update-turtle-position (form-init9035937621053454300.clj:37).
-; Wrong number of args (1) passed to: evolutionary-prog.core/update-turtle-position/fn--8050
-clj꞉evolutionary-prog.core꞉> 
-{:current-position [4 3]}
-clj꞉evolutionary-prog.core꞉> 
-#'evolutionary-prog.core/turtle-coord
-clj꞉evolutionary-prog.core꞉> 
-turtle-coord
-{:current-position [2 2], :previous-position []}
-clj꞉evolutionary-prog.core꞉> 
-instance2
-{:current-position [4 3]}
-clj꞉evolutionary-prog.core꞉> 
-#'evolutionary-prog.core/update-turtle-position
-clj꞉evolutionary-prog.core꞉> 
-{:current-position [2 2], :previous-position [[2 2]]}
-clj꞉evolutionary-prog.core꞉> 
-#'evolutionary-prog.core/update-turtle-position
-clj꞉evolutionary-prog.core꞉> 
-; Execution error (ArityException) at evolutionary-prog.core/update-turtle-position (form-init9035937621053454300.clj:35).
-; Wrong number of args (4) passed to: evolutionary-prog.core/update-turtle-position/fn--8058
-clj꞉evolutionary-prog.core꞉> 
-#'evolutionary-prog.core/update-turtle-position
-clj꞉evolutionary-prog.core꞉> 
-; Execution error (ArityException) at evolutionary-prog.core/update-turtle-position (form-init9035937621053454300.clj:35).
-; Wrong number of args (4) passed to: evolutionary-prog.core/update-turtle-position/fn--8063
-clj꞉evolutionary-prog.core꞉> 
-#'evolutionary-prog.core/update-turtle-position
-clj꞉evolutionary-prog.core꞉> 
-; Execution error (ArityException) at evolutionary-prog.core/update-turtle-position (form-init9035937621053454300.clj:35).
-; Wrong number of args (1) passed to: evolutionary-prog.core/update-turtle-position/fn--8068
-clj꞉evolutionary-prog.core꞉> 
-#'evolutionary-prog.core/update-turtle-position
-clj꞉evolutionary-prog.core꞉> 
-{:current-position {:current-position [4 3]}, :previous-position []}
-clj꞉evolutionary-prog.core꞉> 
-{:current-position [4 3]}
-clj꞉evolutionary-prog.core꞉> 
-#'evolutionary-prog.core/update-turtle-position
-clj꞉evolutionary-prog.core꞉> 
-{:current-position [4 3], :previous-position []}
-clj꞉evolutionary-prog.core꞉> 
-#'evolutionary-prog.core/update-turtle-position
-clj꞉evolutionary-prog.core꞉> 
-; Execution error (ArityException) at evolutionary-prog.core/update-turtle-position (form-init9035937621053454300.clj:35).
-; Wrong number of args (4) passed to: evolutionary-prog.core/update-turtle-position/fn--8083
-clj꞉evolutionary-prog.core꞉> 
-#'evolutionary-prog.core/update-turtle-position
-clj꞉evolutionary-prog.core꞉> 
-{:current-position [2 2], :previous-position [[2 2]]}
-clj꞉evolutionary-prog.core꞉> 
-#'evolutionary-prog.core/turtle-coord
-clj꞉evolutionary-prog.core꞉> 
-turtle-coord
-#atom[{:current-position [2 2], :previous-position []} 0x38972f15]
+(update-turtle-position! [6 3])
+{:current-position [6 3], :previous-position [[[2 2]] ([4 4])]}
 clj꞉evolutionary-prog.core꞉> 
 @turtle-coord
-{:current-position [2 2], :previous-position []}
+{:current-position [6 3], :previous-position [[[2 2]] ([4 4])]}
 clj꞉evolutionary-prog.core꞉> 
-#'evolutionary-prog.core/update-turtle-position
+#'evolutionary-prog.core/turtle-coord
 clj꞉evolutionary-prog.core꞉> 
-{:current-position [4 3], :previous-position [nil]}
+@turtle-coord
+{:current-position [], :previous-position []}
 clj꞉evolutionary-prog.core꞉> 
-#'evolutionary-prog.core/update-turtle-position
+(update-turtle-position! [2 2])
+{:current-position [[2 2]], :previous-position []}
 clj꞉evolutionary-prog.core꞉> 
-{:current-position [4 3], :previous-position [nil [4 3]]}
+@turtle-coord
+{:current-position [[2 2]], :previous-position []}
 clj꞉evolutionary-prog.core꞉> 
 (:current-position @turtle-coord)
-[4 3]
+[[2 2]]
 clj꞉evolutionary-prog.core꞉> 
-{:current-position [4 3]}
+(get (:current-position @turtle-coord) 0)
+[2 2]
+clj꞉evolutionary-prog.core꞉> 
+#'evolutionary-prog.core/update-turtle-position!
+clj꞉evolutionary-prog.core꞉> 
+(update-turtle-position! [4 4])
+{:current-position [4 4], :previous-position [[2 2]]}
+clj꞉evolutionary-prog.core꞉> 
+(update-turtle-position! [6 5])
+; Execution error (IllegalArgumentException) at evolutionary-prog.core/update-turtle-position! (form-init11176175010735459374.clj:26).
+; Don't know how to create ISeq from: java.lang.Long
 clj꞉evolutionary-prog.core꞉> 
 #'evolutionary-prog.core/turtle-coord
 clj꞉evolutionary-prog.core꞉> 
-; Execution error (ClassCastException) at nrepl.middleware.interruptible-eval/evaluate$fn$fn (interruptible_eval.clj:87).
-; class clojure.lang.Atom cannot be cast to class clojure.lang.Associative (clojure.lang.Atom and clojure.lang.Associative are in unnamed module of loader 'app')
+@turtle-coord
+{:current-position [], :previous-position []}
 clj꞉evolutionary-prog.core꞉> 
 @turtle-coord
-{:current-position [2 2], :previous-position []}
+{:current-position [], :previous-position []}
 clj꞉evolutionary-prog.core꞉> 
-#'evolutionary-prog.core/instance2
+(find-turtle-XY-coord board)
+[2 2]
 clj꞉evolutionary-prog.core꞉> 
-{:current-position [4 3], :previous-position []}
+(update-turtle-position! (find-turtle-XY-coord board))
+{:current-position [[2 2]], :previous-position []}
 clj꞉evolutionary-prog.core꞉> 
-#'evolutionary-prog.core/update-turtle-position
+#'evolutionary-prog.core/go-straight
 clj꞉evolutionary-prog.core꞉> 
-{:current-position [4 3], :previous-position [[2 2]]}
+(go-straight turtle-coord)
+; Execution error (NullPointerException) at evolutionary-prog.core/go-straight (form-init11176175010735459374.clj:41).
+; Cannot invoke "Object.getClass()" because "x" is null
 clj꞉evolutionary-prog.core꞉> 
-; nREPL Connection was closed
+(pop [3 2])
+[3]
+clj꞉evolutionary-prog.core꞉> 
+(conj (pop [3 2]) 1)
+[3 1]
+clj꞉evolutionary-prog.core꞉> 
+(get :current-position @turtle-coord)
+nil
+clj꞉evolutionary-prog.core꞉> 
+@turtle-coord
+{:current-position [[2 2]], :previous-position []}
+clj꞉evolutionary-prog.core꞉> 
+(:current-position @turtle-coord)
+[[2 2]]
+clj꞉evolutionary-prog.core꞉> 
+(get (:current-position @turtle-coord) 0)
+[2 2]
+clj꞉evolutionary-prog.core꞉> 
+(get (get (:current-position @turtle-coord) 0) 1)
+2
+clj꞉evolutionary-prog.core꞉> 
+#'evolutionary-prog.core/go-straight
+clj꞉evolutionary-prog.core꞉> 
+(go-straight @turtle-coord)
+; Execution error (ClassCastException) at evolutionary-prog.core/go-straight (form-init11176175010735459374.clj:37).
+; class clojure.lang.PersistentArrayMap cannot be cast to class java.util.concurrent.Future (clojure.lang.PersistentArrayMap is in unnamed module of loader 'app'; java.util.concurrent.Future is in module java.base of loader 'bootstrap')
+clj꞉evolutionary-prog.core꞉> 
+#'evolutionary-prog.core/go-straight
+clj꞉evolutionary-prog.core꞉> 
+(go-straight turtle-coord)
+[2 2]
+nil
+clj꞉evolutionary-prog.core꞉> 
+#'evolutionary-prog.core/go-straight
+clj꞉evolutionary-prog.core꞉> 
+(go-straight turtle-coord)
+2
+nil
+clj꞉evolutionary-prog.core꞉> 
+#'evolutionary-prog.core/go-straight
+clj꞉evolutionary-prog.core꞉> 
+(go-straight turtle-coord)
+[2]
+nil
+clj꞉evolutionary-prog.core꞉> 
+#'evolutionary-prog.core/go-straight
+clj꞉evolutionary-prog.core꞉> 
+(go-straight turtle-coord)
+[2 2 3]
+clj꞉evolutionary-prog.core꞉> 
+#'evolutionary-prog.core/go-straight
+clj꞉evolutionary-prog.core꞉> 
+(go-straight turtle-coord)
+[2 3]
+clj꞉evolutionary-prog.core꞉> 
+#'evolutionary-prog.core/turn-left
+clj꞉evolutionary-prog.core꞉> 
+(turn-left turtle-coord)
+[3 2]
+clj꞉evolutionary-prog.core꞉> 
+#'evolutionary-prog.core/turn-left
+clj꞉evolutionary-prog.core꞉> 
+(turn-left turtle-coord)
+[1 2]
+clj꞉evolutionary-prog.core꞉> 
+nil
+clj꞉evolutionary-prog.core꞉> 
+; Syntax error compiling at (src/evolutionary_prog/core.clj:25:1).
+; Unable to resolve symbol: go-up in this context
+clj꞉evolutionary-prog.core꞉> 
+nil
+clj꞉evolutionary-prog.core꞉> 
+; Syntax error compiling at (src/evolutionary_prog/core.clj:25:1).
+; Unable to resolve symbol: go-up in this context
+clj꞉evolutionary-prog.core꞉> 
+(@turtle-coord)
+; Execution error (ArityException) at evolutionary-prog.core/eval7870 (form-init11176175010735459374.clj:186).
+; Wrong number of args (0) passed to: clojure.lang.PersistentArrayMap
+clj꞉evolutionary-prog.core꞉> 
+@turtle-coord
+{:current-position [[2 2]], :previous-position []}
+clj꞉evolutionary-prog.core꞉> 
+(go-up turtle-coord)
+; Syntax error compiling at (.calva/output-window/output.calva-repl:193:1).
+; Unable to resolve symbol: go-up in this context
+clj꞉evolutionary-prog.core꞉> 
+nil
+clj꞉evolutionary-prog.core꞉> 
+; Syntax error compiling at (src/evolutionary_prog/core.clj:25:1).
+; Unable to resolve symbol: go-up in this context
+clj꞉evolutionary-prog.core꞉> 
+; Execution error (IllegalAccessError) at evolutionary-prog.core/eval7888$loading (form-init11176175010735459374.clj:1).
+; go-down does not exist
+clj꞉evolutionary-prog.core꞉> 
+nil
+clj꞉evolutionary-prog.directions꞉> 
+#'evolutionary-prog.directions/go-up
+clj꞉evolutionary-prog.directions꞉> 
+#'evolutionary-prog.directions/go-down
+clj꞉evolutionary-prog.directions꞉> 
+#'evolutionary-prog.directions/go-left
+clj꞉evolutionary-prog.directions꞉> 
+#'evolutionary-prog.directions/go-right
+clj꞉evolutionary-prog.directions꞉> 
+nil
+clj꞉evolutionary-prog.core꞉> 
+[1 2]
+clj꞉evolutionary-prog.core꞉> 
+[3 2]
+clj꞉evolutionary-prog.core꞉> 
+[2 1]
+clj꞉evolutionary-prog.core꞉> 
+[2 3]
+clj꞉evolutionary-prog.core꞉> 
+; Execution error (IllegalAccessError) at evolutionary-prog.core/eval7930$loading (form-init11176175010735459374.clj:1).
+; update-turtle-position! does not exist
+clj꞉evolutionary-prog.core꞉> 
+#'evolutionary-prog.coords/update-turtle-position!
+clj꞉evolutionary-prog.coords꞉> 
+nil
+clj꞉evolutionary-prog.core꞉> 
+#'evolutionary-prog.core/turtle-atom
+clj꞉evolutionary-prog.core꞉> 
+; Execution error (ClassCastException) at evolutionary-prog.core/eval7951 (form-init11176175010735459374.clj:22).
+; class clojure.lang.Atom cannot be cast to class clojure.lang.IFn (clojure.lang.Atom and clojure.lang.IFn are in unnamed module of loader 'app')
+clj꞉evolutionary-prog.core꞉> 
+nil
+clj꞉evolutionary-prog.core꞉> 
+[2 2]
+clj꞉evolutionary-prog.core꞉> 
+{:current-position [[2 2]], :previous-position []}
+clj꞉evolutionary-prog.core꞉> 
+nil
+clj꞉evolutionary-prog.core꞉> 
+"X"
+clj꞉evolutionary-prog.core꞉> 
