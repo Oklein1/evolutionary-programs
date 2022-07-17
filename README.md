@@ -1,1 +1,3 @@
-# This Mini project simulates a turtle finding its way to its destination using Clojure
+# Adventures in Evolutionary Programming
+
+The first adventure simulates a turtle trying to find the "exit," i.e. its destination, by exploring the board.
