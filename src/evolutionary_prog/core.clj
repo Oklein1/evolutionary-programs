@@ -1,28 +1,23 @@
 (ns evolutionary-prog.core
   (:gen-class)
-  (:require [evolutionary-prog.coords :refer [find-turtle-XY-coord update-turtle-position!]]
-            [evolutionary-prog.directions :refer [go-down go-up go-left go-right]]))
+  (:require [evolutionary-prog.turtleCoords :refer :all]
+            [evolutionary-prog.directions :refer :all]
+            [evolutionary-prog.boardUI :refer :all]))
 
 
 
-;; TO DO
-;; update board
-
-
-
-(def board [[1 1 1 1 1],
-            [1 1 1 1 1],
-            [1 1 "X" 1 1],
-            [1 1 1 1 1],
-            [1 1 1 1 1]])
-
+(def board (atom [[1 1 1 1 1],
+                  [1 1 1 1 1],
+                  [1 1 "X" 1 1],
+                  [1 1 1 1 1],
+                  [1 1 1 1 1]]))
 
 (def turtle-atom (atom {:current-position [] :previous-position []}))
+(update-turtle-position! (find-turtle-XY-coord @board) turtle-atom) ;; gets first position
 
-(update-turtle-position! (find-turtle-XY-coord board) turtle-atom)
+(seach-for-exit! board turtle-atom)
 
-;; TIME TO UPDATE BOARD
-;; update the atom, then use that to update board
 
-(get-in board (get (:current-position @turtle-atom) 0)) ;; gets X
-
+(defn main []
+  (repeatedly 13 (fn []
+                 (seach-for-exit! board turtle-atom))))
